@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emanuel Figueiredo</title>
+       <link rel="shortcut icon" href="imgs/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-title">
+                <img src="./imgs/icone.png" alt="Logo" class="logo" width="50" height="50">
+                <h1>Emanuel Figueiredo</h1>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger-btn" class="hamburger-menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content animate-on-scroll">
+                <img src="./imgs/emanuel.png" alt="Foto de perfil de Emanuel Figueiredo" class="profile-pic" width="200" height="200">
+                <p>Olá! Sou profissional de tecnologia. Bem-vindo(a) ao meu portfólio!</p>
+                <a href="#projetos" class="btn">Ver Projetos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about-section">
+        <div class="container animate-on-scroll">
+            <h2>Sobre Mim</h2>
+            <p>"Olá! Sou um profissional multifacetado com forte atuação em desenvolvimento de software e operações de TI. Sou proficiente em linguagens como Java, Python, Kotlin, JavaScript, HTML e CSS, e tenho sólidos conhecimentos em DevOps e Suporte Técnico, garantindo não apenas a criação de soluções robustas, mas também sua entrega eficiente e estabilidade em produção."</p>
+            <p>Mencione algumas de suas **habilidades**: Desenvolvimento Web, Design Responsivo, UI/UX, etc.</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects-section">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="project-grid animate-on-scroll">
+                <div class="project-card">
+                    <h3>Projeto 1</h3>
+                    <img src="https://via.placeholder.com/300x200" alt="Imagem do Projeto 1">
+                    <p>Uma breve descrição do Projeto 1. Fale sobre o que ele faz e quais tecnologias usou.</p>
+                    <a href="#" class="btn-small" target="_blank">Ver Projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Projeto 2</h3>
+                    <img src="https://via.placeholder.com/300x200" alt="Imagem do Projeto 2">
+                    <p>Uma breve descrição do Projeto 2. Fale sobre o que ele faz e quais tecnologias usou.</p>
+                    <a href="#" class="btn-small" target="_blank">Ver Projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Projeto 3</h3>
+                    <img src="https://via.placeholder.com/300x200" alt="Imagem do Projeto 3">
+                    <p>Uma breve descrição do Projeto 3. Fale sobre o que ele faz e quais tecnologias usou.</p>
+                    <a href="#" class="btn-small" target="_blank">Ver Projeto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact-section">
+        <div class="container animate-on-scroll">
+            <h2>Contato</h2>
+            <p>Ficou interessado(a)? Entre em contato!</p>
+            <div class="contact-links">
+                <a href="mailto:esdf2020@gmail.com" target="_blank" class="contact-btn">Email</a>
+                <a href="https://www.linkedin.com/in/emanuel-figueiredo" target="_blank" class="contact-btn">LinkedIn</a>
+                <a href="https://github.com/seugithub" target="_blank" class="contact-btn">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Emanuel Figueiredo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const nav = document.getElementById('main-nav');
+
+        hamburgerBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            hamburgerBtn.classList.toggle('active');
+        });
+
+        // Animação de Scroll (Fade-in)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Anima apenas uma vez
+                }
+            });
+        }, {
+            threshold: 0.1 // Anima quando 10% do elemento está visível
+        });
+
+        const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
+        elementsToAnimate.forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
