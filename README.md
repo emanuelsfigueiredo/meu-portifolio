@@ -2,7 +2,7 @@
 
 Bem-vindo ao repositório do meu portfólio pessoal. Este projeto foi criado para apresentar minhas habilidades, projetos e informações de contato de uma forma moderna e responsiva.
 
-![Prévia do Portfólio](https://via.placeholder.com/800x400.png/1f2937/e5e7eb?text=Adicione+um+print+do+seu+site+aqui!)
+![Prévia do Portfólio](https://emanuelsfigueiredo.github.io/meu-portifolio/)
 *Substitua a imagem acima por uma captura de tela do seu portfólio!*
 
 ## 🚀 Sobre o Projeto
