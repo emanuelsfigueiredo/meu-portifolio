@@ -57,6 +57,7 @@ O projeto também está pronto para ser hospedado em serviços como **GitHub Pag
 
 Vamos nos conectar!
 
-- **LinkedIn:** Emanuel Figueiredo
+- **LinkedIn:** https://linkedin.com/in/emanuel-figueiredo/
 - **Email:** esdf2020@gmail.com
 - **GitHub:** https://github.com/emanuelsfigueiredo/
+- **Instagran:** emanuel_silvaf
